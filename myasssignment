@@ -1,0 +1,19 @@
+aeiofhjsd;fjsad;kj
+asd;lfja;sldfkj
+asd;lfjsadfkj
+;kjasd;fljaksdfjl
+al;dsfja
+voting  works fine even after deleting votePod
+oot@ip-172-31-7-236 k8s-specifications]# kubectl get po
+NAME                      READY   STATUS    RESTARTS   AGE
+db-b54cd94f4-rxznm        1/1     Running   0          2m51s
+redis-868d64d78-f9wpp     1/1     Running   0          2m51s
+result-5d57b59f4b-jl2qf   1/1     Running   0          2m51s
+
+now deleting the worker pod
+worker pod dleted and still application works
+
+@ip-172-31-7-236 k8s-specifications]# kubectl get po
+NAME                      READY   STATUS              RESTARTS   AGE
+db-b54cd94f4-rxznm        1/1     Running             0          3m43s
+redis-868
